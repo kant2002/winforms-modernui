@@ -60,7 +60,7 @@ namespace MetroFramework.Localization
 
         private void importManifestResource(string ctrlName)
         {
-            Assembly callingAssembly = Assembly.GetCallingAssembly();
+            Assembly callingAssembly = typeof(MetroLocalize).Assembly;
 
             string localizationFilename = callingAssembly.GetName().Name + ".Localization." + CurrentLanguage()  + "." + ctrlName + ".xml";
             Stream xmlStream = callingAssembly.GetManifestResourceStream(localizationFilename);

@@ -2,6 +2,7 @@
 
   <PropertyGroup>
     <LangVersion>8.0</LangVersion>
+    <WinFormsRepoRoot></WinFormsRepoRoot>
   </PropertyGroup>
 
   <PropertyGroup>
